@@ -171,12 +171,14 @@ timeline
     1960:  Popularização de computadores
     1970 : SQL Language
          : Edgar Codd 
-         :  A Relational Model of Data for Large Shared Data Banks)
+         : A Relational Model of Data for Large Shared Data Banks)
     1980 : Popularização dos Bancos de Dados
-         : Google
     1995 : MySQL     
     2000s : NoSQL
+    2003  : The Google File System
+    2006  : Hadoop
     2010s : Big Data
+    2020s : Data Lake
 </div>
 
 <!--
@@ -193,6 +195,15 @@ NoSQL - not only SQL
     NoSQL databases came about as a response to the growth of the internet and the need for faster speed and processing of unstructured data. Today, cloud databases and self-driving databases are breaking new ground when it comes to how data is collected, stored, managed, and utilized
 -->
 
+<!-- 
+The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple
+-->
+
+<!-- 
+2004  : MapReduce - Simplified Data Processing on Large Clusters
+2006  : Bigtable - A Distributed Storage System for Structured Data
+-->
+
 <!--
     Big Data
         Describe a large volume of data that is too large or complex to be dealt with by traditional data-processing application software
@@ -204,4 +215,3 @@ NoSQL - not only SQL
         Example
             Posts, tweets, images, and video clips
 -->
----
