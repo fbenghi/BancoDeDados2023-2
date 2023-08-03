@@ -188,7 +188,8 @@ An open-sourced relational database management system (RDBMS)
 -->
 
 <!--
-NoSQL - not only SQL
+NoSQL - not only SQL    
+    Not only SQL
     NoSQL databases came about as a response to the growth of the internet and the need for faster speed and processing of unstructured data. Today, cloud databases and self-driving databases are breaking new ground when it comes to how data is collected, stored, managed, and utilized
 -->
 
