@@ -22,10 +22,11 @@ fbenghi@gmail.com
 ---
 # Sugestões de sites e leituras
 * Bibliografia
-[Livro - Database Design (full)](https://opentextbc.ca/dbdesign01/front-matter/about-the-book/)
-[Geeks for Geeks](https://www.geeksforgeeks.org/introduction-of-dbms-database-management-system-set-1/?ref=lbp)
+**[Português]ELMASRI, R.; NAVATHE, S. B. Sistemas de Banco de Dados. 6ª ed. São Paulo: Pearson, 2011.l**
+[Inglês][Livro - Database Design (full)](https://opentextbc.ca/dbdesign01/front-matter/about-the-book/)
+[Inglês][Geeks for Geeks](https://www.geeksforgeeks.org/introduction-of-dbms-database-management-system-set-1/?ref=lbp)
 
-* Open datasets
+* Dados abertos
     [Google Data Search](https://datasetsearch.research.google.com/)
     [Kaggle](https://www.kaggle.com/datasets)
 
@@ -66,7 +67,7 @@ Um dado pessoal pode ser:
 * Identificador Indireto
     * Aplicável possivelmente a mais de uma pessoa
     * Data de nascimento, Endereço de IP, nacionalidade
-**Importante: vários identificadores indiretos podem se tornar um identificador direto.**
+**Importante: vários identificadores indiretos podem permitir a identificação do indivíduo**
 
 ---
 ## Dados Confidenciais
@@ -86,13 +87,6 @@ Precisam estar em conformidade com a LGPD (independentemente da localização), 
 
 Agentes de processamento devem: manter registros de quais dados armazenam, do que pode ser removido e do que pode ser destruído.
 
-<!--
----
-### Anonimização vs pseudonimização
-* Dados Anonimizados: não podem ser vinculados a um indivíduo identificável
-
-* Dados Pseudonimizados:a identificação é mantida  separadamente de outros dados
--->
 ---
 ## Direitos dos titulares (Gratuitos, adequados e imediato)
 Titulares têm o direito a:
@@ -134,84 +128,58 @@ Exemplo de sistemas para persistência de dados: Livros, Arquivos (físicos e di
 # Persistência de dados em Arquivos
 Forma clássica de armazenamento de dados. Funciona, mas:
 * Permite redundância / mais de uma instância de um atributo
-<!--- 
-Problemas:
-Inconsistência no formato / organização dos dados nos arquivos
-Mesma informação armazenada em lugares diferentes
-Mesma informação diferente
--->
-* Não garante integridade /permite dados (in)corretos e (in)consistentes
-<!--- 
-Dados precisam seguir certos padrões:
-    Como tipo (número, texto)
-    Intervalo (mínimo ou máximo) - Ex. 30 de fevereiro
-    Tamanho máximo - Ex. 50 caracteres
--->
-* Sem isolação / uma modificação é imediatamente visível
-<!--- 
-Alguém querendo ler o dado, enquanto a escrita ainda não foi terminada
--->
+    * Mesma informação armazenada em lugares diferentes
+    * Mesma informação diferente
+
+* Não garante integridade / permite dados (in)corretos e (in)consistentes
+
+---
+* Sem isolação / uma modificação é imediatamente visível. Exemplo: Alguém querendo ler o dado, enquanto a escrita ainda não foi terminada
    
-* Com problemas de segurança
-<!--- 
-Sem proteção para quem pode ler / escrever ou controle de acesso
--->
-* Sem acesso concorrente
-<!--
-Só uma pessoa pode escrever num arquivo ao mesmo tempo
--->
+* Com problemas de segurança: Sem proteção para quem pode ler / escrever ou controle de acesso
+
+* Sem acesso concorrente: Só uma pessoa pode escrever num arquivo ao mesmo tempo
+
 ---
 # Solução:
 ![](https://i.imgflip.com/hb9zb.jpg)
 
 ---
-## Evolução dos Banco de Dados
-<div class="mermaid">
-timeline
-    1960:  Popularização de computadores
-    1970 : SQL Language
-         : Edgar Codd 
-         : A Relational Model of Data for Large Shared Data Banks)
-    1980 : Popularização dos Bancos de Dados
-    1995 : MySQL     
-    2000s : NoSQL
-    2003  : The Google File System
-    2006  : Hadoop
-    2010s : Big Data
-    2020s : Data Lake
-</div>
+Evolução dos bancos de dados
+<img src="_img/timeline.png" style="width: 50%" align="right"/>
 
-<!--
-MYSQL:
-An open-sourced relational database management system (RDBMS)
-    According to a Stack Overflow survey in 2020, MySQL is being used by 55.6% of the survey participants, making it the most popular database in the world
+---
+## MySQL
+* Sistema de gerenciamento de banco de dados com código aberto 
+* Sistema de banco de dados mais popular do mundo - em pesquisa do Stack Overflow de 2020, ainda 55,6% dos participantes o utilizavam.
+* MysSQL ainda é usado por alguns dos websites mais famosos do mundo como Airbnb, Uber, LinkedIn, Facebook, Twitter, and YouTube (https://www.oracle.com/database/what-is-database/#link4)
+
+---
+## NoSQL 
+* Not only SQL (não somente SQL)   
+* Este formato de banco de dados veio como uma resposta ao crescimento da internet e da necessidade de processar mais rapidamente dados não estruturados. 
+---
+
+## Google
+* Artigos do Google que mostraram para o mundo como processar grandes quantidades de dados usando computação distribuída
+    * 2003 - The Google File System
+    * 2004 - MapReduce - Simplified Data Processing on Large Clusters
+    * 2006 - Big table - A Distributed Storage System for Structured Data
+---
+
+## Big Data
+* Descreve um volume de dados que são ou muito grandes ou muito complexos para serem processados pelos métodos tradicionais de computação.
     
-    MySQL is the DBMS behind some of the top websites and web-based applications in the world, including Airbnb, Uber, LinkedIn, Facebook, Twitter, and YouTube (https://www.oracle.com/database/what-is-database/#link4)
--->
+* 3Vs para definir Big Data 
+    * Dados que contém uma grande VARIEDADE
+    * Dados que chegam em VOLUME crescente 
+    * Dados que chegam com VELOCIDADE crescente
 
-<!--
-NoSQL - not only SQL    
-    Not only SQL
-    NoSQL databases came about as a response to the growth of the internet and the need for faster speed and processing of unstructured data. Today, cloud databases and self-driving databases are breaking new ground when it comes to how data is collected, stored, managed, and utilized
--->
+* Exemplo: Posts, tweets, images, and video clips
 
-<!-- 
-The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple
--->
+---
+## Data Lake
+* É um repositório centralizado para armazenar, processar dados estruturados, semiestruturados ou não estruturados.
 
-<!-- 
-2004  : MapReduce - Simplified Data Processing on Large Clusters
-2006  : Bigtable - A Distributed Storage System for Structured Data
--->
-
-<!--
-    Big Data
-        Describe a large volume of data that is too large or complex to be dealt with by traditional data-processing application software
-        3Vs 
-            Data that contains greater Variety
-            Arriving in increasing Volumes 
-            With more Velocity
-
-        Example
-            Posts, tweets, images, and video clips
--->
+* Exemplo de empresa: Snow Flake - empresa com  a maior estreia na bolsa de valores americana em 2020
+---
