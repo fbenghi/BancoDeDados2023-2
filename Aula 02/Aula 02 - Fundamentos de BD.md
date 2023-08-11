@@ -59,13 +59,41 @@ Conhecimento é a resposta para uma pergunta gerencial
 (ELMASRI e NAVATHE, 2011, p.3)
 
 
+
+
+---
+# Organização dos dados em um banco
+## Arquivos, registros e campos
+
+![Alt text](_img/image-14.png)
+
+---
+### Exercício: 
+Utilizando uma ferramenta de planilhas, com o Microsoft Excel, simule a inserção de dados em um banco de dados com as seguintes características: 
+
+* A empresa é organizada em departamentos. Cada departamento tem um nome exclusivo e um número exclusivo.
+* Um departamento controla uma série de projetos, cada um deles com um nome exclusivo, um número exclusivo e um orçamento exclusivo
+* Funcionários: armazenamos o nome, número do CPF, salário e genero.
+---
+### Representação dos dados
+<img src="_img/image-9.png" style="width: 50%" align="left"/>
+
+---
+### Representação dos dados
+<img src="_img/image-8.png" style="width: 50%" align="left"/>
+
+---
+### Representação dos dados
+
+<img src="_img/image-7.png" style="width: 50%" align="left"/>
+
 ---
 ## Persistência: Banco de Dados vs Arquivos 
 * Arquivos
 <img src="_img/image-3.png" style="width: 70%" align="left"/>
 
-
 ---
+
 * Banco de dados
 
 <img src="_img/image-4.png" style="width: 70%" align="left"/>
@@ -125,8 +153,7 @@ software e hardware conforme a necessidade
 ---
 ## Atores
 ### Programadores de Aplicações
-* Identificam as necessidades dos usuários finais 
-* Definem as especificações das transações padrão que atendam a elas profissionais que escrevem programas e aplicações para acessar o BD;
+* Identificam as necessidades dos usuários finais e definem as especificações das transações padrão que atendam a essas necessidades 
 * Engenheiros de software e desenvolvedores de 
 sistemas de software
 
@@ -142,34 +169,10 @@ Exemplo: um caixa de supermercado faz essas 3 operações
 
 ---
 ## Atores
+
 <img src="_img/image-6.png" style="width: 70%" align="left"/>
 
 
----
-# Organização dos dados no SGBD
-## Arquivos, registros e campos
-
-![Alt text](_img/image-14.png)
-
----
-### Exemplo: Represente os arquivos, campos e registros
-
-* A empresa é organizada em departamentos. Cada departamento tem um nome exclusivo e um número exclusivo.
-* Um departamento controla uma série de projetos, cada um deles com um nome exclusivo, um número exclusivo e um orçamento exclusivo
-* Funcionários: armazenamos o nome, número do CPF, endereço, salário. Um funcionário trabalha para um departamento, mas pode trabalhar em vários projetos, que não necessariamente são controlados pelo mesmo departamento
-
----
-### Representação dos dados
-<img src="_img/image-9.png" style="width: 50%" align="left"/>
-
----
-### Representação dos dados
-<img src="_img/image-8.png" style="width: 50%" align="left"/>
-
----
-### Representação dos dados
-
-<img src="_img/image-7.png" style="width: 50%" align="left"/>
 
 ---
 ## Tipos de banco de dados
