@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: gaia
+
 _class: lead
 paginate: true
 backgroundColor: #fff
@@ -11,6 +11,8 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 ### Aula 02
 #### Fundamentos de Banco de Dados
 Felipe Marx Benghi
+https://github.com/fbenghi/BancoDeDados2023-2
+![bg right:35% w:350](_img/qrcode_github.com.png)
 
 ---
 # Objetivos
