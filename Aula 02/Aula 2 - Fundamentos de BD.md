@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: gaia
+
 _class: lead
 paginate: true
 backgroundColor: #fff
@@ -8,11 +8,16 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 ---
 
 # **Banco de dados**
-### Aula 02
-#### Fundamentos de Banco de Dados
+## Aula 02
+### Fundamentos de Banco de Dados
 Felipe Marx Benghi
+https://github.com/fbenghi/BancoDeDados2023-2
+
+
+![bg right:35% w:350](_img/qrcode_github.com.png)
 
 ---
+
 # Objetivos
 - [x] Dados, informação e conhecimento
 - [x] SGBDs
@@ -31,6 +36,8 @@ Ex: Quantidade de pedidos cancelados
 
 * Conhecimento: selecionar, organizar e manipular dados, para torná-los úteis para uma tarefa específica.
 Ex: Quantidade de pedidos cancelados no primeiro trimestre de 2012
+
+---
 
 
 ---
@@ -107,7 +114,7 @@ O que chamamos de Banco de Dados é na verdade o SGBD, o correto é chamá-los d
 
 - Salvar os dados no HD
 - Manter em memória os dados mais acessados
-- ligar dados e metadados
+- Gerenciar dados e metadados
 - Disponibilizar uma interface para programas e usuários externos acessem o banco de dados (para banco de dados relacionais, é utilizada a linguagem SQL)
 - Encriptar dados
 - Controlar o acesso a informações
