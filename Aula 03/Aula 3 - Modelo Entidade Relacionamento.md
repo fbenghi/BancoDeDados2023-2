@@ -35,9 +35,13 @@ https://github.com/fbenghi/BancoDeDados2023-2
 1. Especificar de **modo sistemático** a necessidades dos usuários de banco de dados;
 1. Estruturar o banco de dados de forma a atender plenamente todas as necessidades.
 
+<!-- ---
+# Projeto de Software
+![bg right:60% width:700px](_img/image.png) -->
+
 
 ---
-## 3 Níveis de Modelagem
+## 3 Níveis de Modelagem de Banco de Dados
 
 1. Nível Conceitual – **representação do mundo real**. Define quais dados aparecerão no BD e como eles se relacionam, mas sem se importar com a implementação no SGBD.
 
@@ -45,9 +49,6 @@ https://github.com/fbenghi/BancoDeDados2023-2
 
 1. Nível Físico – descreve como esses dados estarão de fato armazenados, partição de discos etc. É onde os dados existem / são gravados.
 
----
-# 3 Níveis de Modelagem
-![bg right:60% width:700px](_img/image.png)
 
 ---
 ## Nível Conceitual
@@ -55,6 +56,7 @@ https://github.com/fbenghi/BancoDeDados2023-2
 * O Projeto Conceitual produz um esquema conceitual a partir de requisitos de um mundo real
 * Registra quais dados devem aparecer, mas não como;
 * É independente do SGBD escolhido.
+* Composto por Entidades, Atributos e Relacionamentos
 
 ### Exemplos:
 * Dados de uma Pessoa com os seguintes atributos: Nome, RG, CPF, Rua, Numero, Cidade;
@@ -80,9 +82,9 @@ https://github.com/fbenghi/BancoDeDados2023-2
 ---
 ## Relacionamento
 * Conjunto de associações entre ocorrências de entidades;
-* Um relacionamento R entre n entidades E1, E2, ..., En é um conjunto de associações entre entidades deste tipo;
-* O grau de um relacionamento é o número de entidades que participam do relacionamento.
+
 ![bg right:40% width:400px](_img/image-2.png)
+
 ---
 ## Relacionamento
 Cada tipo entidade que participa de um tipo relacionamento desempenha um papel particular no relacionamento.
@@ -98,7 +100,7 @@ O Diagrama Entidade-Relacionamento (DER) é composto por um conjunto de objetos 
 <br/>
 <br/>
 
-![width:800px](_img/image-9.png)
+![Alt text](image.png)
 
 ---
 ### Exemplo
@@ -129,18 +131,28 @@ A razão de cardinalidade para um relacionamento binário especifica o número m
 #### Exemplo 1:N
 >  Cada departamento pode estar relacionado a qualquer número de funcionários, mas um funcionário só pode estar relacionado a (trabalha para) um departamento
 
+Opções:
+* Um para um – 1:1 
+* Um para muitos – 1:N
+* Muitos para um – N:1
+* Muitos para muitos – N:N ou N:M
+
 1:N :arrow_right: Muitos [N] Funcionários trabalham para [1] Departamento
 <br> 
 
 ![width:800px](_img/image-7.png)
 
-Notação alternativa:
-![width:800px](_img/image-18.png)
+
 
 ---
 
 ## Exemplo: 
 Qual a cardinalidade dos outros relacionamentos no exemplo da empresa Empresa?
+
+<!-- ---
+## Cardinalidade
+Notação alternativa:
+![width:800px](_img/image-18.png) -->
 
 ---
 ## Tipos de Atributos
@@ -152,7 +164,9 @@ Qual a cardinalidade dos outros relacionamentos no exemplo da empresa Empresa?
 
 ---
 ## Continuando o exemplo...
-* Queremos registrar os dependentes de cada funcionário para fins de plano de saúde. Para cada dependente, mantemos o nome, sexo, data de nascimento e parentesco com o funcionário
+Quais os tipos de atributos no exemplo?
+
+
 
 ---
 ## Entidade Fraca
@@ -165,6 +179,11 @@ Qual a cardinalidade dos outros relacionamentos no exemplo da empresa Empresa?
 ![bg right:40% width:450px](_img/image-11.png)
 
 ---
+
+## Continuando o exemplo...
+* Queremos registrar os dependentes de cada funcionário para fins de plano de saúde. Para cada dependente, mantemos o nome, sexo, data de nascimento e parentesco com o funcionário
+
+---
 ![Alt text](_img/image-8.png)
 
 ---
@@ -174,20 +193,13 @@ Qual a cardinalidade dos outros relacionamentos no exemplo da empresa Empresa?
 * Cada departamento tem um nome exclusivo, um número exclusivo e um funcionário em particular que o gerencia. 
 * Todo funcionário tem um supervisor direto (que é outro funcionário)
 
----
-## Exemplo de diagrama
-![Alt text](_img/image-12.png)
 
----
-## Relacionamentos n-ésimos
-* A abordagem ER permite que sejam definidos relacionamentos de grau maior do que dois, ou seja que relacione mais que duas entidades;
-* São chamados de relacionamentos ternários, quando envolvem 3 entidades; quaternários quando envolvem 4 entidades, ...
-* É sempre possível recompor um conjunto de relacionamentos não binários (n-ésimos, n  2) por um conjunto de relacionamentos binários distintos.
 
 ---
 # Descrição completa do problema
 - A empresa é organizada em departamentos. Cada departamento tem um nome exclusivo, um número exclusivo e um funcionário em particular que o gerencia. Registramos a data inicial em que esse funcionário começou a gerenciar o departamento. Um departamento pode ter vários locais.
 - Um departamento controla uma série de projetos, cada um deles com um nome exclusivo, um número exclusivo e um local exclusivo.
+
 
 ---
 
@@ -200,7 +212,16 @@ Qual a cardinalidade dos outros relacionamentos no exemplo da empresa Empresa?
 
 ---
 ## Relacionamentos n-ésimos
+* A abordagem ER permite que sejam definidos relacionamentos de grau maior do que dois, ou seja que relacione mais que duas entidades;
+* São chamados de relacionamentos ternários, quando envolvem 3 entidades; quaternários quando envolvem 4 entidades, ...
+* É sempre possível recompor um conjunto de relacionamentos não binários (n-ésimos, n -> 2) por um conjunto de relacionamentos binários distintos.
+
+---
+## Relacionamentos n-ésimos
 ![Alt text](_img/image-13.png)
+
+
+
 
 ---
 ## Especialização x Generalização
