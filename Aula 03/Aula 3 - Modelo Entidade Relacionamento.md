@@ -175,7 +175,8 @@ Quais os tipos de atributos no exemplo?
 * Este relacionamento é chamado de **relacionamento identificador**
 
 * Não possuem atributos-chave próprios
-
+* Podem possuir uma chave-parcial
+![Alt text](image-3.png)
 ![bg right:40% width:450px](_img/image-11.png)
 
 ---
