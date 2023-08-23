@@ -41,9 +41,9 @@ https://github.com/fbenghi/BancoDeDados2023-2
 
 ---
 
-![bg vertical width:500px](image-4.png)
-![bg width:200px](image-9.png)
-![bg width:700px](image-5.png)
+![bg vertical width:500px](_img/image-4.png)
+![bg width:200px](_img/image-9.png)
+![bg width:700px](_img/image-5.png)
 
 ---
 ## Modelo Lógico Relacional
@@ -68,25 +68,25 @@ Para criar uma tabela, deve-se designar:
 * Normalmente uma destas chaves candidatas será escolhida como **chave primária**.
 <BR><br>
 
-![bg right:50% width:500px](image-10.png)
+![bg right:50% width:500px](_img/image-10.png)
 
 ---
 ## Chave Estrangeira
 * Uma Chave Estrangeira (FK – foreign key) especifica um relacionamento entre as tabelas.
 <br>
 
-![Alt text](image-51.png)
+![Alt text](_img/image-51.png)
 
 ---
-![bg vertical width:900](image-3.png)
-![bg width:200px](image-9.png)
-![bg width:1100px](image-51.png)
+![bg vertical width:900](_img/image-3.png)
+![bg width:200px](_img/image-9.png)
+![bg width:1100px](_img/image-51.png)
 
 ---
 ## Diagrama do modelo lógico relacional
 * Segue-se a simbologia da UML (Unified Modeling Language – Linguagem de Modelagem Unificada):
 * O mapeamento do Modelo Entidade relacionamento para o Modelo Relacional segue alguns passos básicos
-![bg right width:600](image-11.png)
+![bg right width:600](_img/image-11.png)
 
 ---
 ## 1º Passo
@@ -94,11 +94,11 @@ Para criar uma tabela, deve-se designar:
 * Para cada *Atributo Composto*, são inseridos apenas os componentes simples;
 * Um dos *Atributos chaves* deve ser escolhida como a **Chave Primária** da Tabela.
 
-![bg right:50% width:600px](image-16.png)
+![bg right:50% width:600px](_img/image-16.png)
 
 ---
 ## 1º Passo
-![Alt text](image-15.png)
+![Alt text](_img/image-15.png)
 
 ---
 ## 2º passo
@@ -106,13 +106,13 @@ Para criar uma tabela, deve-se designar:
 * Para cada *Atributo Composto*, são inseridos apenas os *Atributos Componentes Simples*; 
 * A **Chave Primária** será composta pela *Chave Parcial* da *Entidade Fraca* mais a chave primária da *Entidade Proprietária*.
 
-![bg right width:500](image-24.png)
+![bg right width:500](_img/image-24.png)
 
 ---
 
-![bg right:100% width:400px](image-24.png)
-![bg width:200px](image-20.png)
-![bg width:400px](image-19.png)
+![bg right:100% width:400px](_img/image-24.png)
+![bg width:200px](_img/image-20.png)
+![bg width:400px](_img/image-19.png)
 
 ---
 ## 3º passo
@@ -120,61 +120,61 @@ Para criar uma tabela, deve-se designar:
 * Se um dos lados do relacionamento tiver participação total e outro parcial, então é interessante que a chave do lado com participação parcial seja inserida como chave estrangeira no lado que tem participação total.
 <br>
 
-![width:900px](image-25.png)
+![width:900px](_img/image-25.png)
 
 ---
-![bg vertical width:900px](image-25.png)
-![bg width:200px](image-9.png)
-![bg width:900px](image-26.png)
+![bg vertical width:900px](_img/image-25.png)
+![bg width:200px](_img/image-9.png)
+![bg width:900px](_img/image-26.png)
 
 ---
 ## 4º passo
 * Para cada relacionamento regular com cardinalidade 1:N, deve-se inserir a Chave Primária da Entidade com menor cardinalidade (1) como Chave Estrangeira na Tabela referente a entidade de maior cardinalidade (N).
 <br>
-![width:900px](image-29.png)
+![width:900px](_img/image-29.png)
 
 
 ---
 
-![bg vertical width:900px](image-29.png)
-![bg width:200px](image-9.png)
-![bg width:800px](image-30.png)
+![bg vertical width:900px](_img/image-29.png)
+![bg width:200px](_img/image-9.png)
+![bg width:800px](_img/image-30.png)
 
 ---
 ## 5º passo
 * Para cada relacionamento regular com cardinalidade N:N, cria-se uma nova Tabela, contendo todos os atributos do relacionamento mais a chave primária das duas Tabelas.
 * A Chave Primária da nova Tabela será composta pelos Atributos Chave das duas Tabelas que a originaram .
 
-![width:900px](image-34.png)
+![width:900px](_img/image-34.png)
 
 ---
 
-![bg vertical width:800px](image-34.png)
-![bg width:200px](image-9.png)
-![bg width:900px](image-33.png)
+![bg vertical width:800px](_img/image-34.png)
+![bg width:200px](_img/image-9.png)
+![bg width:900px](_img/image-33.png)
 
 --- 
 ## 6º passo
 * Para cada atributo multivalorado, cria-se uma nova  Tabela, contendo o atributo multivalorado
 * A Chave Primária da nova Tabela  será composta pela Chave-Primária da Tabela que representa a Entidade a que o atributo multivalorado pertencia originalmente e a Chave-Primária da nova tabela;
 
-![width:700](image-36.png)
+![width:700](_img/image-36.png)
 
 ---
-![bg vertical width:700](image-36.png)
-![bg width:200px](image-9.png)
-![bg width:800](image-38.png)
+![bg vertical width:700](_img/image-36.png)
+![bg width:200px](_img/image-9.png)
+![bg width:800](_img/image-38.png)
 
 ---
 ## 6º passo (continuação)
 * Se o Atributo Multivalorado for composto, então a tabela deverá conter todos os atributos simples.
 
-![Alt text](image-39.png)
+![Alt text](_img/image-39.png)
 
 ---
-![bg vertical width:700px](image-39.png)
-![bg width:200px](image-9.png)
-![bg width:900px](image-40.png)
+![bg vertical width:700px](_img/image-39.png)
+![bg width:200px](_img/image-9.png)
+![bg width:900px](_img/image-40.png)
 
 ---
 # Normalização
@@ -195,7 +195,7 @@ A normalização busca:
 
 ## Quais os 2 problemas com a tabela abaixo?
 Devemos armazenar telefone e endereço de cada cliente.
-![Alt text](image-47.png)
+![Alt text](_img/image-47.png)
 
 ---
 
@@ -216,15 +216,15 @@ Procedimentos para **atributos multivalorados**:
 * A chave primária será a combinação dos dois atributos.
 ---
 
-![bg vertical width:650](image-47.png)
-![bg width:200px](image-9.png)
-![bg width:900](image-48.png)
+![bg vertical width:650](_img/image-47.png)
+![bg width:200px](_img/image-9.png)
+![bg width:900](_img/image-48.png)
 
 ---
 ## Qual o problema da tabela abaixo?
 A tabela foi criada para indicar a quantidade de produtos por pedido
 
-![width:650](image-52.png)
+![width:650](_img/image-52.png)
 
 ---
 ## 2ª forma normal (2FN)
@@ -242,7 +242,7 @@ Se a chave primária tiver um único atributo, não é preciso testar a 2FN.
 
 Problemas: se houver alteração no nome do produto terá que se alterar em todos os registros da tabela venda.
 
-![bg right width:650](image-43.png)
+![bg right width:650](_img/image-43.png)
 
 ---
 ## 2ª forma normal (2FN)
@@ -252,14 +252,14 @@ Procedimentos:
 1. A chave primária da nova tabela será o atributo do qual os atributos removidos são funcionalmente dependentes.
 
 ---
-![bg vertical width:650](image-43.png)
-![bg width:200px](image-9.png)
-![bg width:1000](image-46.png)
+![bg vertical width:650](_img/image-43.png)
+![bg width:200px](_img/image-9.png)
+![bg width:1000](_img/image-46.png)
 
 ---
 ## Qual o problema da tabela abaixo?
 A tabela foi criada para indicar os vencedores de um conjunto de torneios anuais. Exemplo (Série A - Índice `1`, B  - Índice `2` e C - Índice `3`)
-![Alt text](image-49.png)
+![Alt text](_img/image-49.png)
 
 ---
 
@@ -278,9 +278,9 @@ Procedimentos:
 
 ---
 
-![bg vertical width:650](image-49.png)
-![bg width:200px](image-9.png)
-![bg width:1000px](image-50.png)
+![bg vertical width:650](_img/image-49.png)
+![bg width:200px](_img/image-9.png)
+![bg width:1000px](_img/image-50.png)
 
 ---
 # FIM
