@@ -75,31 +75,8 @@ A razão de cardinalidade para um relacionamento binário especifica o número m
 
 ---
 
-#### Exemplo 1:N
->  Cada departamento pode estar relacionado a qualquer número de funcionários, mas um funcionário só pode estar relacionado a (trabalha para) um departamento
-
-Opções:
-* Um para um – 1:1 
-* Um para muitos – 1:N
-* Muitos para um – N:1
-* Muitos para muitos – N:N ou N:M
-
-1:N :arrow_right: Muitos [N] Funcionários trabalham para [1] Departamento
-<br> 
-
-![width:800px](_img/image-7.png)
-
-
-
----
-
-## Exemplo: 
-Qual a cardinalidade dos outros relacionamentos no exemplo da empresa Empresa?
-
-<!-- ---
-## Cardinalidade
-Notação alternativa:
-![width:800px](_img/image-18.png) -->
+## Continuando o exemplo...
+Quais a cardinalidade nos relacionamentos?
 
 ---
 ## Tipos de Atributos
@@ -123,7 +100,7 @@ Quais os tipos de atributos no exemplo?
 
 * Não possuem atributos-chave próprios
 * Podem possuir uma chave-parcial
-![Alt text](image-3.png)
+![Alt text](image-5.png)
 ![bg right:40% width:450px](_img/image-11.png)
 
 ---
@@ -145,13 +122,13 @@ Quais os tipos de atributos no exemplo?
 
 ---
 # Descrição completa do problema
-- A empresa é organizada em departamentos. Cada departamento tem um nome exclusivo, um número exclusivo e um funcionário em particular que o gerencia. Registramos a data inicial em que esse funcionário começou a gerenciar o departamento. Um departamento pode ter vários locais.
+- A empresa é organizada em departamentos. Cada departamento tem um nome exclusivo, um número exclusivo e um funcionário em particular que o gerencia. *Registramos a data inicial em que esse funcionário começou a gerenciar o departamento. Um departamento pode ter vários locais.*
 - Um departamento controla uma série de projetos, cada um deles com um nome exclusivo, um número exclusivo e um local exclusivo.
 
 
 ---
 
-- Armazenamos o nome, número do Cadastro de Pessoa Física, endereço, salário, sexo (gênero) e data de nascimento de cada funcionário. Um funcionário é designado para um departamento, mas pode trabalhar em vários projetos, que não necessariamente são controlados pelo mesmo departamento. Registramos o número atual de horas por semana que um funcionário trabalha em cada projeto. Também registramos o supervisor direto de cada funcionário (que é outro funcionário).
+- Armazenamos o nome, número do Cadastro de Pessoa Física, endereço, salário, sexo (gênero) e data de nascimento de cada funcionário. Um funcionário é designado para um departamento, mas pode trabalhar em vários projetos, que não necessariamente são controlados pelo mesmo departamento. *Registramos o número atual de horas por semana que um funcionário trabalha em cada projeto.* Também registramos o supervisor direto de cada funcionário (que é outro funcionário).
 - Queremos registrar os dependentes de cada funcionário para fins de seguro. Para cada dependente, mantemos o nome, sexo, data de nascimento e parentesco com o funcionário.
 
 ---
@@ -159,32 +136,4 @@ Quais os tipos de atributos no exemplo?
 ![bg width:700px](_img/image-20.png)
 
 ---
-## Relacionamentos n-ésimos
-* A abordagem ER permite que sejam definidos relacionamentos de grau maior do que dois, ou seja que relacione mais que duas entidades;
-* São chamados de relacionamentos ternários, quando envolvem 3 entidades; quaternários quando envolvem 4 entidades, ...
-* É sempre possível recompor um conjunto de relacionamentos não binários (n-ésimos, n -> 2) por um conjunto de relacionamentos binários distintos.
-
----
-## Relacionamentos n-ésimos
-![Alt text](_img/image-13.png)
-
-
-
-
----
-## Especialização x Generalização
-* Propriedades podem ser atribuídas a entidades através do conceito de generalização/especialização;
-* Através deste conceito é possível atribuir propriedades particulares a um subconjunto das ocorrências (especializadas) de uma entidade genérica;
-* O símbolo para representar generalização/especialização é um triângulo isósceles.
-
----
-## Especialização x Generalização
-![Alt text](_img/image-16.png)
-
----
-## Especialização x Generalização
-![Alt text](_img/image-15.png)
-
----
 # FIM
----

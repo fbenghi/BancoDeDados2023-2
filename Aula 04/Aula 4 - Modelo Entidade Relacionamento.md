@@ -9,7 +9,7 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 
 # **Banco de dados**
 ## Aula 04
-### Modelo Entidade Relacionamento
+### Modelo Lógico Relacional
 Felipe Marx Benghi
 https://github.com/fbenghi/BancoDeDados2023-2
 
@@ -195,7 +195,7 @@ A normalização busca:
 
 ## Quais os 2 problemas com a tabela abaixo?
 Devemos armazenar telefone e endereço de cada cliente.
-![Alt text](_img/image-47.png)
+![Alt text](_img/new_image-6.png)
 
 ---
 
@@ -216,15 +216,15 @@ Procedimentos para **atributos multivalorados**:
 * A chave primária será a combinação dos dois atributos.
 ---
 
-![bg vertical width:650](_img/image-47.png)
+![bg vertical width:650](_img/new_image-6.png)
 ![bg width:200px](_img/image-9.png)
-![bg width:900](_img/image-48.png)
+![bg width:900](_img/new_image-4.png)
 
 ---
 ## Qual o problema da tabela abaixo?
 A tabela foi criada para indicar a quantidade de produtos por pedido
 
-![width:650](_img/image-52.png)
+![width:650](_img/new_image-3.png)
 
 ---
 ## 2ª forma normal (2FN)
@@ -241,8 +241,7 @@ Se a chave primária tiver um único atributo, não é preciso testar a 2FN.
 > Portanto, não está na 2FN.
 
 Problemas: se houver alteração no nome do produto terá que se alterar em todos os registros da tabela venda.
-
-![bg right width:650](_img/image-43.png)
+![bg right:50% width:650](_img/new_image-3.png)
 
 ---
 ## 2ª forma normal (2FN)
@@ -254,7 +253,7 @@ Procedimentos:
 ---
 ![bg vertical width:650](_img/image-43.png)
 ![bg width:200px](_img/image-9.png)
-![bg width:1000](_img/image-46.png)
+![bg width:1000](_img/new_image-2.png)
 
 ---
 ## Qual o problema da tabela abaixo?
@@ -266,7 +265,9 @@ A tabela foi criada para indicar os vencedores de um conjunto de torneios anuais
 ## 3ª forma normal (3FN)
 Uma relação está na 3FN duas condições forem satisfeitas:
 * Estiver na 2FN.
-* Nenhum atributo não-chave depender de outra coluna não-chave.
+* Nenhum atributo não-chave depender de outra atributo não-chave.
+
+Importante: atributos que podem ser calculados por meio de equações devem ser eliminados para que uma relação esteja na 3FN
 
 ---
 ## 3ª forma normal (3FN)
@@ -280,7 +281,7 @@ Procedimentos:
 
 ![bg vertical width:650](_img/image-49.png)
 ![bg width:200px](_img/image-9.png)
-![bg width:1000px](_img/image-50.png)
+![bg width:1000px](_img/new_image-1.png)
 
 ---
 # FIM
