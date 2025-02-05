@@ -1,7 +1,7 @@
-/* Exclui o banco de dados "empresa", caso o banco de dados exista */
+/* Exclui o banco de dados "test_data_types", caso o banco de dados exista */
 drop database if exists test_data_types;
 
-/* Cria o banco de dados "empresa" */
+/* Cria o banco de dados "test_data_types" */
 create database test_data_types;
 
 /* Define o banco de dados atual */
@@ -25,19 +25,16 @@ CREATE TABLE `test_int` (
 describe test_int;
 
 /* Insercao valida para mostrar a diferenca que zerofill e o argumento size fazem*/
-INSERT INTO `empresa_diagram`.`test_int`
+INSERT INTO `test_data_types`.`test_int`
 (`idtest_int`,
 `bigint`,
 `int`,
 `tinyint`)
 VALUES
-(1,
-1,
-1,
-1);
+(1,1,1,1);
 
 /* Insercao no limite dos tipos */
-INSERT INTO `empresa_diagram`.`test_int`
+INSERT INTO `test_data_types`.`test_int`
 (`idtest_int`,
 `bigint`,
 `int`,
@@ -50,7 +47,7 @@ VALUES
 
 
 /* Erro - Insercao fora do limite do tiny */
-INSERT INTO `empresa_diagram`.`test_int`
+INSERT INTO `test_data_types`.`test_int`
 (`idtest_int`,
 `bigint`,
 `int`,
@@ -64,9 +61,6 @@ VALUES
 
 
 
-
-
-
 /* ------------- ENUM -------------------- */
 /* Cria tabela com enums */
 CREATE TABLE `test_enum` (
@@ -76,7 +70,7 @@ CREATE TABLE `test_enum` (
   PRIMARY KEY (`idtest_enum`));
 
 /* Insercao valida */
-INSERT INTO `empresa_diagram`.`test_enum`
+INSERT INTO `test_data_types`.`test_enum`
 (`idtest_enum`,
 `test_enum_genero`,
 `test_enum_tam_roupa`)
@@ -85,7 +79,7 @@ VALUES
 
 
 /* Insercao valida */
-INSERT INTO `empresa_diagram`.`test_enum`
+INSERT INTO `test_data_types`.`test_enum`
 (`idtest_enum`,
 `test_enum_genero`,
 `test_enum_tam_roupa`)
